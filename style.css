@@ -1,0 +1,570 @@
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+}
+
+body{
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #292b2c;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header-1 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 25px 5px;
+	height: 100px;
+	box-sizing: border-box;
+	background-color: #fff;
+	z-index: 999;
+}
+
+.brand{
+	width: 12%;
+}
+
+.nav-1 {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.nav-1 ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-1 a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #2880ce;
+}
+
+.nav-1 .rekrutmen {
+	border:1px solid #2880ce;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.nav-1 .masuk {
+	color: #fff;
+	padding: 8px;
+	width: 100px;
+	background-color: #2880ce;
+	border-radius: 25px;
+}
+
+.brand-nav{
+	display: none;
+}
+
+#close{
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	display: none;
+	justify-content: space-between;
+	flex-direction: column;
+	top: 45px;
+	right: 10px;
+}
+
+#close span{
+	display: block;
+	width: 20px;
+	height: 1px;
+	background: #2880ce;
+}
+
+#close span:nth-child(1){
+	transform: rotate(45deg) translate(4px, 0px);
+    transform-origin: 0 0;
+}
+
+#close span:nth-child(2){
+	transform: rotate(-45deg) translate(4px, 0px);
+    transform-origin: 0 100%;
+}
+
+.menu-toggle{
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 15px;
+
+}
+
+.menu-toggle span{
+	width: 15px;
+	height: 1px;
+	background-color:#2880ce;
+	display: block;
+}
+
+.hal-1 {
+	margin: 60px auto 0 auto;
+	display: grid;
+	grid-template-areas: "judul home";
+	grid-template-columns: 1fr 1fr;
+}
+
+.judul-1{
+	grid-area: judul;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.judul-1 h1{
+	color: #2880ce;
+	margin: 0;
+
+}
+
+.judul-1 p {
+	color: #2880ce;
+}
+
+.judul-1 h2{
+	color: #2880ce;
+}
+
+.image-orang{
+	grid-area: home;
+	display: grid;
+	justify-items:end;
+}
+
+.register-menu li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.register-menu a {
+	text-decoration: none;
+}
+
+.register-menu .create{
+	background: #2880ce;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.register-menu .register{
+	border: 1px solid #2880ce;
+    padding: 10px;
+    border-radius: 5px;
+    color: #2880ce;
+}
+
+.italic-notice{
+	font-size: 14px;
+	font-style: italic;
+}
+
+.notice{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+.notice-judul{
+	color: #2880ce;
+	text-align: center;
+	margin: 0;
+}
+
+.notice span{
+	background-color: #ffd629;
+	width: 100px;
+	height: 2px;
+	display: block;
+}
+
+.notice-1{
+	width: 60%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.notice-1 .notice-judul-1{
+	color: #2880ce;
+    text-align: center;
+    margin: 0;
+}
+
+.notice-1 span{
+	background-color: #ffd629;
+	width: 100px;
+	height: 2px;
+	display: block;
+}
+
+.text-notice{
+	text-align: center;
+	font-size: 12px;
+}
+
+.next-notice{
+	color: #2880ce;
+	padding: 10px;
+	border:1px solid #2880ce;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.hal-2{
+	background-color: #e9f2ff;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	width: 60%;
+	margin: 10px 0;
+}
+
+.thumbnail-kiri {
+	width: 200px;
+	float: left;
+}
+
+.thumbnail-kanan {
+	width: 200px;
+	float: right;
+}
+
+.langkah{
+	color: #d03801;
+    font-weight: 700;
+}
+
+.langkah-judul{
+	color: #2880ce;
+	font-weight: 700;
+}
+
+.langkah-info{
+	font-size: 15px;
+}
+
+.clear{
+	clear: both;
+}
+
+.hal-3{
+	display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.warning{
+	width: 150px;
+    position: absolute;
+    top: -33px;
+    right: 5px;
+}
+
+.card-1{
+	background: #fce9eb;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    position: relative
+}
+
+.judul-notice-2 {
+	color: #e8505b;
+	font-size: 20px;
+}
+
+.text-notice-2{
+	font-size: 14px;
+	margin: 35px 0;
+}
+
+.container-footer{
+	padding: 30px 0;
+	background-color: #2880ce;
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+
+.footer {
+	display: grid;
+	grid-template-areas: "footerSatu footerDua"
+	;
+	justify-content:space-around;
+}
+
+.footer-1 {
+	grid-area: footerSatu;
+	margin: 10px 0;
+}
+
+.title-info{
+	margin: 0;
+}
+
+.contact-info{
+	margin: 0;
+}
+
+.footer-2{
+	grid-area: footerDua;
+	margin: 10px 0;
+}
+
+.footer-2 a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+
+.footer-2 li {
+	margin: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-1{
+		width: 60%;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	.brand{
+		width: 20%;
+	}
+
+	.nav-1{
+		position: fixed;
+	    background: white;
+	    height: 100%;
+	    width: 280px;
+	    left: -380px;
+	    top: 0;
+	    padding: 20px;
+	    transition: 0.3s;
+	    z-index: 9999;
+	    box-sizing: border-box;
+	}
+
+	.slide{
+		left: 0;
+	}
+
+	.nav-1 ul{
+		display: block;
+	}
+
+	.nav-1 ul li {
+		margin: 10px 0;
+	}
+
+	.nav-1 .rekrutmen{
+		border:none;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	#close{
+		display: flex;
+	}
+
+	.brand-nav{
+		width: 60%;
+		display: block;
+	}
+
+	.menu-toggle{
+		display: flex;
+	}
+
+	.header-1{
+		justify-content: space-between;
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	.brand{
+		width: 30%;
+	}
+
+	.nav-1{
+		position: fixed;
+	    background: white;
+	    height: 100%;
+	    width: 280px;
+	    left: -380px;
+	    top: 0;
+	    padding: 20px;
+	    transition: 0.3s;
+	    z-index: 9999;
+	    box-sizing: border-box;
+	}
+
+	.nav-1 ul{
+		display: block;
+	}
+
+	.nav-1 ul li {
+		margin: 10px 0;
+	}
+
+	.nav-1 .rekrutmen{
+		border:none;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.brand-nav{
+		width: 60%;
+		display: block;
+	}
+
+	#close{
+		display: flex;
+	}
+
+	.menu-toggle{
+		display: flex;
+	}
+
+	.slide{
+		left: 0;
+	}
+
+	.header-1{
+		justify-content: space-between;
+	}
+
+	.hal-1 {
+		grid-template-areas: 
+		"home"
+		"judul"
+		;
+		grid-template-columns: 1fr;
+	}
+
+	.image-orang{
+		grid-area: home;
+	}
+
+	.judul-1{
+		padding: 20px;
+	}
+
+	.judul-1 h1{
+		font-size: 16px;
+
+	}
+
+	.judul-1 p {
+		font-size: 14px;
+		
+	}
+
+	.judul-1 h2{
+		font-size: 15px;
+		
+	}
+
+	.italic-notice{
+		font-size: 12px;
+	}
+
+	.card{
+		width: 100%;
+	}
+
+	.thumbnail-kiri {
+		float: none;
+	}
+
+	.thumbnail-kanan {
+		float: none;
+	}
+
+	.card-1{
+		width: 100%;
+	}
+
+	.warning{
+		width: 100px;
+		top: -22px;
+	}
+
+	.footer{
+		grid-template-areas:
+		"footerDua"
+		"footerSatu"
+		;
+		justify-content: flex-start;
+		padding: 0 10px;
+	}
+
+	
+}
